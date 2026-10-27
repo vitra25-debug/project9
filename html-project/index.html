@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Project - Survey</title>
+</head>
+<body>
+    <h1 style="color: #0056b3;text-align: center;">Form Project - Survey</h1>
+         <p>Name:
+            <input type="text" name="Name:" size="15" maxlength="30" placeholder="Your name" />
+            Major:
+            <input type="text" name="Major:" size="15" maxlength="30" placeholder="Your major" />
+        </p>
+        <fieldset>
+            <legend style="color: #0056b3;"><strong>Your details</strong></legend>
+            <p>Email:
+                <input type="email" name="Email:" size="15" maxlength="30" placeholder="example@domain.com" />
+            </p>
+            <p>Gender:
+                <input id="female" type="radio" name="Gender:" value="f" /> 
+                <label for="female">Female</label>
+
+                <input id="male" type="radio" name="Gender:" value="m" />
+                <label for="male">Male</label>
+            </p>
+
+            
+            <p>Grade:
+                <select id="grade" name="grade">
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </p>
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend style="color: #0056b3;"><strong>Semester Feedback</strong></legend>
+            <p> How is your semester doing?
+                <select id="semester" name="semester">
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Avarage">Avarage</option>
+                    <option value="Difficult">Difficult</option>
+                </select>
+            </p>
+            <p>
+            Which subjects are challenging?
+            <br>
+            <input type="checkbox" name="subjects" value="Web"/>Web
+            <input type="checkbox" name="subjects" value="Python">Python
+            <input type="checkbox" name="subjects" value="English">English
+            <input type="checkbox" name="subjects" value="Math">Math 
+            </p>
+            <p>Favorite day of the week:
+            <br>
+                <input type="radio" name="week" value="Monday">Monday
+                <input type="radio" name="week" value="Tuesday">Tuesday
+                <input type="radio" name="week" value="Wednesday">Wednesday
+                <input type="radio" name="week" value="Thursday">Thursday
+                <input type="radio" name="week" value="Friday">Friday
+            </p>
+
+            <p>
+            Addiitional Comments:
+            <br>
+                <textarea name="Comments" cols="20" rows="4">Your feedback...</textarea>
+            </p>
+            <input type="submit" style="background-color:#0056b3; color: white;" value="Submit Survey">
+
+        </fieldset> 
+    </p>
+
+    
+</body>
+</html>
